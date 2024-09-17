@@ -1,15 +1,37 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Logo from "/public/logo-netflix.png";
 
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav className="bg-gradient-to-b from-black/70 to-black/0 text-white">
+      <nav
+        className={`fixed top-0 w-full z-10 transition duration-500 ${
+          isScrolled ? "bg-black" : "bg-gradient-to-b from-black/70 to-black/0"
+        } text-white`}
+      >
         <div className="flex justify-between px-[40px] py-[25px]">
           {/* logo & nav */}
           <div className="flex ">
-            <Image src={Logo} alt="logo-netplix" className="mr-[40px]" />
+            <Image src={Logo} alt="logo-netflix" className="mr-[40px]" />
             <ul className="flex gap-x-[15px] font-medium">
               <li className="hover:text-slate-200 duration-200">Homepage</li>
               <li className="hover:text-slate-200 duration-200">Series</li>

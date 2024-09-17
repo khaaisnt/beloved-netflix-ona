@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Gallery() {
   return (
     <>
-    <div></div>
+      <div className="bg-black py-80"></div>
     </>
-  )
+  );
 }

@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <>
       <div
-        className="relative h-[800px] bg-cover bg-top px-[40px] text-white"
+        className="relative h-[850px] bg-cover bg-top px-[40px] text-white"
         style={{ backgroundImage: `url(${HeroImage.src})` }}
       >
         <div className="relative max-w-[600px] pt-[400px]">
