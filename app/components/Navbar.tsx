@@ -28,18 +28,26 @@ export default function Navbar() {
           isScrolled ? "bg-black" : "bg-gradient-to-b from-black/70 to-black/0"
         } text-white`}
       >
-        <div className="flex justify-between px-[40px] py-[25px]">
+        <div className="flex justify-between px-[50px] py-[25px]">
           {/* logo & nav */}
           <div className="flex ">
             <Image src={Logo} alt="logo-netflix" className="mr-[40px]" />
-            <ul className="flex gap-x-[15px] font-medium">
-              <li className="hover:text-slate-200 duration-200">Homepage</li>
-              <li className="hover:text-slate-200 duration-200">Series</li>
-              <li className="hover:text-slate-200 duration-200">Movies</li>
-              <li className="hover:text-slate-200 duration-200">
+            <ul className="flex gap-x-[15px]">
+              <li className="text-white hover:text-slate-200 font-medium duration-200">
+                Homepage
+              </li>
+              <li className="text-white hover:text-slate-200 duration-200">
+                Series
+              </li>
+              <li className="text-white hover:text-slate-200 duration-200">
+                Movies
+              </li>
+              <li className="text-white hover:text-slate-200 duration-200">
                 New and Popular
               </li>
-              <li className="hover:text-slate-200 duration-200">My List</li>
+              <li className="text-white hover:text-slate-200 duration-200">
+                My List
+              </li>
             </ul>
           </div>
           {/* search */}
