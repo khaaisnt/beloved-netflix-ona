@@ -68,7 +68,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
+      {/* Navbar */}
       <div className="top-0 absolute w-full">
         <Navbar />
       </div>

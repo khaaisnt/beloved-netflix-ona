@@ -33,19 +33,19 @@ export default function Navbar() {
           <div className="flex ">
             <Image src={Logo} alt="logo-netflix" className="mr-[40px]" />
             <ul className="flex gap-x-[15px]">
-              <li className="text-white hover:text-slate-200 font-medium duration-200">
+              <li className="text-white hover:text-gray-300 font-medium duration-200">
                 Homepage
               </li>
-              <li className="text-white hover:text-slate-200 duration-200">
+              <li className="text-white hover:text-gray-300 duration-200">
                 Series
               </li>
-              <li className="text-white hover:text-slate-200 duration-200">
+              <li className="text-white hover:text-gray-300 duration-200">
                 Movies
               </li>
-              <li className="text-white hover:text-slate-200 duration-200">
+              <li className="text-white hover:text-gray-300 duration-200">
                 New and Popular
               </li>
-              <li className="text-white hover:text-slate-200 duration-200">
+              <li className="text-white hover:text-gray-300 duration-200">
                 My List
               </li>
             </ul>
