@@ -13,7 +13,7 @@ export default function Hero() {
         {/* Black overlay */}
         <div className="absolute inset-0 bg-black/10"></div>
 
-        <div className="relative max-w-[600px] pt-[400px] z-10">
+        <div className="relative max-w-[600px] pt-[380px] z-10">
           <h1 className="text-[44px] font-black" style={{ fontWeight: 750 }}>
             How To Say Happy Birthday Before I Go Back To Malang
           </h1>

@@ -12,30 +12,30 @@ import Foto3 from "/public/gallery-3.jpg";
 import Foto4 from "/public/gallery-4.jpg";
 import Foto5 from "/public/gallery-5.jpg";
 
-// Arrow component (as explained above)
-interface ArrowProps {
-  left?: boolean;
-  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+// Arrow component
+function Arrow(props: {
   disabled: boolean;
+  left?: boolean;
+  onClick: (e: any) => void;
+}) {
+  const disabledClass = props.disabled ? " arrow--disabled" : "";
+  return (
+    <svg
+      onClick={props.onClick}
+      className={`arrow ${
+        props.left ? "arrow--left" : "arrow--right"
+      } ${disabledClass}`}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      {props.left ? (
+        <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+      ) : (
+        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+      )}
+    </svg>
+  );
 }
-
-const Arrow = ({ left, onClick, disabled }: ArrowProps) => (
-  <button
-    onClick={onClick}
-    disabled={disabled}
-    className={`arrow ${left ? "left-0" : "right-0"} ${
-      disabled ? "disabled" : ""
-    } bg-white/40 hover:bg-white/30 rounded-[5px] px-4 py-2 text-white`}
-    style={{
-      position: "absolute",
-      top: "50%",
-      transform: "translateY(-50%)",
-      zIndex: 1,
-    }}
-  >
-    {left ? "<" : ">"}
-  </button>
-);
 
 export default function Gallery() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -45,7 +45,7 @@ export default function Gallery() {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     slides: {
       perView: 6,
-      spacing: 10,
+      spacing: 7,
     },
     initial: 0,
     slideChanged(slider) {
@@ -58,73 +58,74 @@ export default function Gallery() {
 
   return (
     <div className="relative bg-black px-[50px] py-[50px] text-white">
-      <h3 className="font-semibold text-[24px] mb-[5px]">
-        Onaa Before Meet Me
-      </h3>
+      <div>
+        <h3 className="font-semibold text-[24px] mb-[5px]">
+          Onaa Before Meet Me
+        </h3>
 
-      {/* Slider Container */}
-      <div ref={sliderRef} className="keen-slider">
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto1} alt="gallery-1" />
+        {/* Slider Container 1*/}
+        <div ref={sliderRef} className="keen-slider">
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto1} alt="gallery-1" />
+          </div>
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto2} alt="gallery-2" />
+          </div>
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto3} alt="gallery-3" />
+          </div>
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto4} alt="gallery-4" />
+          </div>
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto5} alt="gallery-5" />
+          </div>
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto1} alt="gallery-6" />
+          </div>
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto1} alt="gallery-1" />
+          </div>
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto2} alt="gallery-2" />
+          </div>
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto3} alt="gallery-3" />
+          </div>
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto4} alt="gallery-4" />
+          </div>
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto5} alt="gallery-5" />
+          </div>
+          <div className="keen-slider__slide h-[150px]">
+            <Image src={Foto1} alt="gallery-6" />
+          </div>
         </div>
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto2} alt="gallery-2" />
-        </div>
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto3} alt="gallery-3" />
-        </div>
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto4} alt="gallery-4" />
-        </div>
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto5} alt="gallery-5" />
-        </div>
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto1} alt="gallery-6" />
-        </div>
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto1} alt="gallery-1" />
-        </div>
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto2} alt="gallery-2" />
-        </div>
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto3} alt="gallery-3" />
-        </div>
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto4} alt="gallery-4" />
-        </div>
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto5} alt="gallery-5" />
-        </div>
-        <div className="keen-slider__slide h-[150px]">
-          <Image src={Foto1} alt="gallery-6" />
-        </div>
+
+        {/* Arrow Navigation */}
+        {loaded && instanceRef.current && (
+          <>
+            <Arrow
+              left
+              onClick={(e: any) =>
+                e.stopPropagation() || instanceRef.current?.prev()
+              }
+              disabled={currentSlide === 0}
+            />
+
+            <Arrow
+              onClick={(e: any) =>
+                e.stopPropagation() || instanceRef.current?.next()
+              }
+              disabled={
+                currentSlide ===
+                instanceRef.current.track.details.slides.length - 1
+              }
+            />
+          </>
+        )}
       </div>
-
-      {/* Arrow Navigation */}
-      {loaded && instanceRef.current && (
-        <>
-          <Arrow
-            left
-            onClick={(e: any) => {
-              e.stopPropagation();
-              instanceRef.current?.prev();
-            }}
-            disabled={currentSlide === 0}
-          />
-          <Arrow
-            onClick={(e: any) => {
-              e.stopPropagation();
-              instanceRef.current?.next();
-            }}
-            disabled={
-              currentSlide ===
-              instanceRef.current.track.details.slides.length - 1
-            }
-          />
-        </>
-      )}
     </div>
   );
 }
