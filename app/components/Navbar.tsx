@@ -32,7 +32,7 @@ export default function Navbar() {
           {/* logo & nav */}
           <div className="flex ">
             <Image src={Logo} alt="logo-netflix" className="mr-[40px]" />
-            <ul className="flex gap-x-[15px]">
+            <ul className="flex gap-x-[15px] text-[14px] items-center">
               <li className="text-white hover:text-gray-300 font-medium duration-200">
                 Homepage
               </li>
