@@ -57,7 +57,7 @@ export default function Gallery() {
   });
 
   return (
-    <div className="relative bg-black px-[50px] py-[50px] text-white">
+    <div className="relative bg-primaryBlack px-[50px] py-[50px] text-white">
       <div>
         <h3 className="font-semibold text-[24px] mb-[5px]">
           Onaa Before Meet Me

@@ -25,7 +25,9 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 w-full z-10 transition duration-500 ${
-          isScrolled ? "bg-black" : "bg-gradient-to-b from-black/70 to-black/0"
+          isScrolled
+            ? "bg-primaryBlack"
+            : "bg-gradient-to-b from-black/70 to-black/0"
         } text-white`}
       >
         <div className="flex justify-between px-[50px] py-[25px]">
@@ -33,9 +35,7 @@ export default function Navbar() {
           <div className="flex ">
             <Image src={Logo} alt="logo-netflix" className="mr-[40px]" />
             <ul className="flex gap-x-[15px] text-[14px] items-center">
-              <li className="text-white hover:text-gray-300 font-medium duration-200">
-                Homepage
-              </li>
+              <li className="text-white font-medium duration-200">Homepage</li>
               <li className="text-white hover:text-gray-300 duration-200">
                 Series
               </li>

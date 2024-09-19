@@ -1,6 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Navbar from "./Navbar";
 import HeroImage from "/public/hero-pict.jpg";
 
@@ -12,6 +15,14 @@ export default function Hero() {
     setIsModalOpen(!isModalOpen);
   };
 
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 500,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <>
       <div
@@ -19,7 +30,7 @@ export default function Hero() {
         style={{ backgroundImage: `url(${HeroImage.src})` }}
       >
         {/* Black overlay */}
-        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="absolute inset-0 bg-primaryBlack/10"></div>
 
         <div className="relative max-w-[600px] pt-[380px] z-10">
           <h1 className="text-[44px] font-black" style={{ fontWeight: 750 }}>
@@ -37,10 +48,10 @@ export default function Hero() {
             {/* Play Button */}
             <button
               onClick={toggleModal}
-              className="py-2 px-5 flex bg-white hover:bg-white/80 duration-200 rounded-[5px] text-black font-medium"
+              className="py-2 px-5 flex bg-white hover:bg-white/80 duration-200 rounded-[5px] text-primaryBlack font-medium"
             >
               <svg
-                className="w-6 h-6 text-black"
+                className="w-6 h-6 text-primaryBlack"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -84,7 +95,10 @@ export default function Hero() {
         {/* Modal */}
         {isModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-secondBlack bg-opacity-50">
-            <div className="bg-secondBlack rounded-md overflow-hidden max-w-[800px] w-full text-white">
+            <div
+              data-aos="zoom-in"
+              className="bg-secondBlack rounded-md overflow-hidden max-w-[800px] w-full text-white"
+            >
               <div
                 className="relative h-[400px] bg-cover bg-top"
                 style={{ backgroundImage: `url(${HeroImage.src})` }}
