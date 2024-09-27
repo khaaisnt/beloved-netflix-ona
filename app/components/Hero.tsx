@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./Navbar";
@@ -32,7 +31,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-primaryBlack/20"></div>
 
         {/* Content */}
-        <div className="relative max-w-[600px] pt-[170px] sm:pt-[200px] md:pt-[300px] lg:pt-[380px] z-10">
+        <div className="relative max-w-[600px] pt-[235px] md:pt-[300px] lg:pt-[380px] z-10">
           <h1
             className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[44px] font-black"
             style={{ fontWeight: 750 }}
@@ -40,9 +39,10 @@ export default function Hero() {
             How To Say Happy Birthday Before I Go Back To Malang
           </h1>
 
-          <p className="py-[10px] sm:py-[15px] md:py-[20px] max-w-[550px] text-[14px] sm:text-[16px] md:text-[18px]">
+          <p className="hidden md:block py-[10px] sm:py-[15px] md:py-[20px] max-w-[550px] text-[14px] sm:text-[16px] md:text-[18px]">
             This is how Rakha express love. In the meantime, you will understand
-            how my brain works.<span className="hidden md:block"> As you see this, Rakha wants to say Happy Birthday to his crush.</span>
+            how my brain works. As you see this, Rakha wants to say Happy
+            Birthday to his crush.
           </p>
           <p className="pb-[10px] sm:pb-[12px] md:pb-[15px] text-[12px] sm:text-[14px] md:text-[16px]">
             Click &apos;Play&apos; to see the details
@@ -135,11 +135,12 @@ export default function Hero() {
                 </h2>
                 <h5 className="text-[14px] sm:text-[16px] my-4">Hi! Onaa</h5>
                 <p className="mb-4">
-                  I ve been thinking about what to write for your birthday, and
-                  there are a few things I want to share with you. I hope you
-                  have a great day and that the year ahead is full of much love,
-                  many wonderful surprises, and gives you lasting memories that
-                  you will cherish in all the days ahead. Happy Birthday Onaa!
+                  I&apos;ve been thinking about what to write for your birthday,
+                  and there are a few things I want to share with you. I hope
+                  you have a great day and that the year ahead is full of much
+                  love, many wonderful surprises, and gives you lasting memories
+                  that you will cherish in all the days ahead. Happy Birthday
+                  Onaa!
                 </p>
                 <p className="mb-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
