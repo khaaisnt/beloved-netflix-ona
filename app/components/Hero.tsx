@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./Navbar";
@@ -26,32 +25,37 @@ export default function Hero() {
   return (
     <>
       <div
-        className="relative h-[850px] bg-cover bg-top px-[50px] text-white"
+        className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[850px] bg-cover bg-top px-[20px] sm:px-[30px] md:px-[50px] text-white"
         style={{ backgroundImage: `url(${HeroImage.src})` }}
       >
         {/* Black overlay */}
-        <div className="absolute inset-0 bg-primaryBlack/10"></div>
+        <div className="absolute inset-0 bg-primaryBlack/20"></div>
 
-        <div className="relative max-w-[600px] pt-[380px] z-10">
-          <h1 className="text-[44px] font-black" style={{ fontWeight: 750 }}>
+        {/* Content */}
+        <div className="relative max-w-[600px] pt-[170px] sm:pt-[200px] md:pt-[300px] lg:pt-[380px] z-10">
+          <h1
+            className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[44px] font-black"
+            style={{ fontWeight: 750 }}
+          >
             How To Say Happy Birthday Before I Go Back To Malang
           </h1>
 
-          <p className="py-[20px] max-w-[550px]">
+          <p className="py-[10px] sm:py-[15px] md:py-[20px] max-w-[550px] text-[14px] sm:text-[16px] md:text-[18px]">
             This is how Rakha express love. In the meantime, you will understand
-            how my brain works. As you see this, Rakha wants to say Happy
-            Birthday to his crush.
+            how my brain works.<span className="hidden md:block"> As you see this, Rakha wants to say Happy Birthday to his crush.</span>
           </p>
-          <p className="pb-[15px]">Click &apos;Play&apos; to see the details</p>
+          <p className="pb-[10px] sm:pb-[12px] md:pb-[15px] text-[12px] sm:text-[14px] md:text-[16px]">
+            Click &apos;Play&apos; to see the details
+          </p>
 
           <div className="flex gap-x-[10px]">
             {/* Play Button */}
             <button
               onClick={toggleModal}
-              className="py-2 px-5 flex bg-white hover:bg-white/80 duration-200 rounded-[5px] text-primaryBlack font-medium"
+              className="py-2 px-4 sm:px-5 flex bg-white hover:bg-white/80 duration-200 rounded-[5px] text-primaryBlack font-medium text-[12px] sm:text-[14px]"
             >
               <svg
-                className="w-6 h-6 text-primaryBlack"
+                className="w-5 h-5 sm:w-6 sm:h-6 text-primaryBlack"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -69,9 +73,9 @@ export default function Hero() {
             </button>
 
             {/* Info Button */}
-            <button className="py-2 px-5 flex bg-white/40 hover:bg-white/30 rounded-[5px] duration-200 text-white font-medium">
+            <button className="py-2 px-4 sm:px-5 flex bg-white/40 hover:bg-white/30 rounded-[5px] duration-200 text-white font-medium text-[12px] sm:text-[14px]">
               <svg
-                className="w-6 h-6 text-white pr-[3px]"
+                className="w-5 h-5 sm:w-6 sm:h-6 text-white pr-[3px]"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -97,10 +101,10 @@ export default function Hero() {
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-secondBlack bg-opacity-50">
             <div
               data-aos="zoom-in"
-              className="bg-secondBlack rounded-md overflow-hidden max-w-[800px] w-full text-white"
+              className="bg-secondBlack rounded-md overflow-hidden max-w-[95%] sm:max-w-[800px] w-full text-white"
             >
               <div
-                className="relative h-[400px] bg-cover bg-top"
+                className="relative h-[200px] sm:h-[300px] md:h-[400px] bg-cover bg-top"
                 style={{ backgroundImage: `url(${HeroImage.src})` }}
               >
                 <button onClick={toggleModal}>
@@ -125,14 +129,16 @@ export default function Hero() {
               </div>
 
               {/* Scrollable Modal Content */}
-              <div className="p-[20px] max-h-[230px] overflow-y-auto">
-                <h2 className="text-[24px] font-bold ">Happy Birthday</h2>
-                <h5 className="text-[16px] my-4">Hi! Onaa</h5>
+              <div className="p-[15px] sm:p-[20px] max-h-[150px] sm:max-h-[230px] overflow-y-auto text-[12px] sm:text-[14px] md:text-[16px]">
+                <h2 className="text-[20px] sm:text-[24px] font-bold">
+                  Happy Birthday
+                </h2>
+                <h5 className="text-[14px] sm:text-[16px] my-4">Hi! Onaa</h5>
                 <p className="mb-4">
-                  I ve been thinking about what to write for yout birhtday, and
-                  there are new few thinks I want to share with you. I hope you
+                  I ve been thinking about what to write for your birthday, and
+                  there are a few things I want to share with you. I hope you
                   have a great day and that the year ahead is full of much love,
-                  many wonderful surprises and gives you lasting memories that
+                  many wonderful surprises, and gives you lasting memories that
                   you will cherish in all the days ahead. Happy Birthday Onaa!
                 </p>
                 <p className="mb-4">
