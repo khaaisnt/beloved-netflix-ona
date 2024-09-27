@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-primaryBlack/20"></div>
 
         {/* Content */}
-        <div className="relative max-w-[600px] pt-[235px] md:pt-[300px] lg:pt-[380px] z-10">
+        <div className="relative max-w-[600px] pt-[210px] sm:pt-[190px] md:pt-[300px] lg:pt-[380px] z-10">
           <h1
             className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[44px] font-black"
             style={{ fontWeight: 750 }}
