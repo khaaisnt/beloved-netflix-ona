@@ -71,7 +71,7 @@ export default function Gallery() {
     <div className="relative bg-primaryBlack px-5 py-10 md:px-[50px] text-white">
       <div>
         <h3 className="font-semibold text-[20px] sm:text-[24px] mb-[5px]">
-          Onaa Before Meet Me
+          She is Onaa
         </h3>
 
         {/* Slider Container */}

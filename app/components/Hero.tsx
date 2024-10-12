@@ -36,13 +36,13 @@ export default function Hero() {
             className="text-[24px] sm:text-[30px] md:text-[36px] lg:text-[44px] font-black"
             style={{ fontWeight: 750 }}
           >
-            How To Say Happy Birthday Before I Go Back To Malang
+            How To Say I Love You Before I Go To Jakarta
           </h1>
 
           <p className="hidden md:block py-[10px] sm:py-[15px] md:py-[20px] max-w-[550px] text-[14px] sm:text-[16px] md:text-[18px]">
             This is how Rakha express love. In the meantime, you will understand
-            how my brain works. As you see this, Rakha wants to say Happy
-            Birthday to his crush.
+            how my brain works. As you see this, Rakha wants to say I Love You
+            to his crush.
           </p>
           <p className="pb-[10px] sm:pb-[12px] md:pb-[15px] text-[12px] sm:text-[14px] md:text-[16px]">
             Click &apos;Play&apos; to see the details
@@ -131,32 +131,27 @@ export default function Hero() {
               {/* Scrollable Modal Content */}
               <div className="p-[15px] sm:p-[20px] max-h-[150px] sm:max-h-[230px] overflow-y-auto text-[12px] sm:text-[14px] md:text-[16px]">
                 <h2 className="text-[20px] sm:text-[24px] font-bold">
-                  Happy Birthday
+                  Mine? Ours?
                 </h2>
                 <h5 className="text-[14px] sm:text-[16px] my-4">Hi! Onaa</h5>
                 <p className="mb-4">
-                  I&apos;ve been thinking about what to write for your birthday,
-                  and there are a few things I want to share with you. I hope
-                  you have a great day and that the year ahead is full of much
-                  love, many wonderful surprises, and gives you lasting memories
-                  that you will cherish in all the days ahead. Happy Birthday
-                  Onaa!
+                  I&apos;ve been thinking a lot about how much you mean to me,
+                  and I just want to tell you how deeply I care for you. You are
+                  such an important part of my life, and every moment with you
+                  feels special. I love how you always bring joy, laughter, and
+                  comfort to my days. Being with you feels like home, and I’m so
+                  thankful to have you by my side.
                 </p>
                 <p className="mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                  diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                  Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
-                  augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
-                  nulla.
+                  I love you more than words can express. Every time I think of
+                  you, my heart fills with happiness. I can&apos;t wait to make
+                  more beautiful memories together, to support each other, and
+                  to grow side by side. You are my everything, and I will always
+                  cherish and love you with all my heart.
                 </p>
-                <p className="mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                  diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-                  Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
-                  augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
-                  nulla.
+                <p className="mb-4 font-semibold">
+                  Thank you for coming into my life, I will always stay here for
+                  you and you and you and you.
                 </p>
               </div>
             </div>
