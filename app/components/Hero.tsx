@@ -131,7 +131,7 @@ export default function Hero() {
               {/* Scrollable Modal Content */}
               <div className="p-[15px] sm:p-[20px] max-h-[150px] sm:max-h-[230px] overflow-y-auto text-[12px] sm:text-[14px] md:text-[16px]">
                 <h2 className="text-[20px] sm:text-[24px] font-bold">
-                  Mine? Ours?
+                  How To Say I Love You Before I Go To Jakarta
                 </h2>
                 <h5 className="text-[14px] sm:text-[16px] my-4">Hi! Onaa</h5>
                 <p className="mb-4">
