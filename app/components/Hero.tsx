@@ -42,9 +42,9 @@ export default function Hero() {
           <p className="hidden md:block py-[10px] sm:py-[15px] md:py-[20px] max-w-[550px] text-[14px] sm:text-[16px] md:text-[18px]">
             This is how Rakha express love. In the meantime, you will understand
             how my brain works. As you see this, Rakha wants to say I Love You
-            to his crush.
+            to Onaa.
           </p>
-          <p className="pb-[10px] sm:pb-[12px] md:pb-[15px] text-[12px] sm:text-[14px] md:text-[16px]">
+          <p className="pb-[10px] font-semibold sm:pb-[12px] md:pb-[15px] text-[12px] sm:text-[14px] md:text-[16px]">
             Click &apos;Play&apos; to see the details
           </p>
 

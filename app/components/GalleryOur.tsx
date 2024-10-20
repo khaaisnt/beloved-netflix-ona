@@ -1,16 +1,22 @@
 "use client";
-
 import React, { useState } from "react";
 import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
 // Import images
-import Foto1 from "/public/gallery-1.jpg";
-import Foto2 from "/public/gallery-2.jpg";
+import Foto1 from "/public/love-1.jpg";
+import Foto2 from "/public/love-2.jpg";
 import Foto3 from "/public/gallery-3.jpg";
 import Foto4 from "/public/gallery-4.jpg";
 import Foto5 from "/public/gallery-5.jpg";
+import Foto6 from "/public/gallery-6.jpg";
+import Foto7 from "/public/gallery-7.jpg";
+import Foto8 from "/public/gallery-8.jpg";
+import Foto9 from "/public/gallery-9.jpg";
+import Foto10 from "/public/gallery-10.jpg";
+import Foto11 from "/public/gallery-11.jpg";
+import Foto12 from "/public/gallery-12.jpg";
 
 // Arrow component
 function Arrow(props: {
@@ -22,7 +28,7 @@ function Arrow(props: {
   return (
     <svg
       onClick={props.onClick}
-      className={`arrow ${
+      className={`arrow mt-5 ${
         props.left ? "arrow--left" : "arrow--right"
       } ${disabledClass}`}
       xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +43,7 @@ function Arrow(props: {
   );
 }
 
-export default function Gallery() {
+export default function GalleryOur() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
 
@@ -68,10 +74,10 @@ export default function Gallery() {
   });
 
   return (
-    <div className="relative bg-primaryBlack px-5 py-10 md:px-[50px] text-white">
+    <div className="relative bg-primaryBlack px-5 pt-6 pb-10 md:px-[50px] text-white">
       <div>
         <h3 className="font-semibold text-[20px] sm:text-[24px] mb-[5px]">
-          She is Onaa
+          Onaa with me
         </h3>
 
         {/* Slider Container */}
@@ -87,7 +93,7 @@ export default function Gallery() {
             <Image
               src={Foto2}
               alt="gallery-2"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
@@ -113,50 +119,50 @@ export default function Gallery() {
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
-              src={Foto1}
+              src={Foto6}
               alt="gallery-6"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
-              src={Foto1}
-              alt="gallery-1"
+              src={Foto7}
+              alt="gallery-7"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
-              src={Foto2}
-              alt="gallery-2"
+              src={Foto8}
+              alt="gallery-8"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
-              src={Foto3}
-              alt="gallery-3"
+              src={Foto9}
+              alt="gallery-9"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
-              src={Foto4}
-              alt="gallery-4"
+              src={Foto10}
+              alt="gallery-10"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
-              src={Foto5}
-              alt="gallery-5"
+              src={Foto11}
+              alt="gallery-11"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
-              src={Foto1}
-              alt="gallery-6"
+              src={Foto12}
+              alt="gallery-12"
               className="w-full h-full object-cover"
             />
           </div>
