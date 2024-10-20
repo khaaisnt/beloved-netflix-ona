@@ -86,84 +86,84 @@ export default function GalleryOna() {
             <Image
               src={Foto1}
               alt="gallery-1"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
               src={Foto2}
               alt="gallery-2"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
               src={Foto3}
               alt="gallery-3"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
               src={Foto4}
               alt="gallery-4"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
               src={Foto5}
               alt="gallery-5"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms] object-top"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
               src={Foto6}
               alt="gallery-6"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
               src={Foto7}
               alt="gallery-7"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
               src={Foto8}
               alt="gallery-8"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
               src={Foto9}
               alt="gallery-9"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
               src={Foto10}
               alt="gallery-10"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
               src={Foto11}
               alt="gallery-11"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">
             <Image
               src={Foto12}
               alt="gallery-12"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
         </div>

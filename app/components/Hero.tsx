@@ -16,7 +16,7 @@ export default function Hero() {
   useEffect(() => {
     AOS.init({
       disable: "phone",
-      duration: 500,
+      duration: 700,
       easing: "ease-out-cubic",
     });
   }, []);
@@ -52,7 +52,7 @@ export default function Hero() {
             {/* Play Button */}
             <button
               onClick={toggleModal}
-              className="py-2 px-4 sm:px-5 flex bg-white hover:bg-white/80 duration-200 rounded-[5px] text-primaryBlack font-medium text-[12px] sm:text-[14px]"
+              className="py-2 px-4 sm:px-5 flex animate-pulse bg-white hover:bg-white/80 duration-200 rounded-[5px] text-primaryBlack font-medium text-[12px] sm:text-[14px]"
             >
               <svg
                 className="w-5 h-5 sm:w-6 sm:h-6 text-primaryBlack"
