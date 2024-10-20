@@ -114,7 +114,7 @@ export default function GalleryOna() {
             <Image
               src={Foto5}
               alt="gallery-5"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
           </div>
           <div className="keen-slider__slide h-[200px] sm:h-[150px]">

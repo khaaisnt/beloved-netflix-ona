@@ -7,16 +7,14 @@ import "keen-slider/keen-slider.min.css";
 // Import images
 import Foto1 from "/public/love-1.jpg";
 import Foto2 from "/public/love-2.jpg";
-import Foto3 from "/public/gallery-3.jpg";
-import Foto4 from "/public/gallery-4.jpg";
-import Foto5 from "/public/gallery-5.jpg";
-import Foto6 from "/public/gallery-6.jpg";
-import Foto7 from "/public/gallery-7.jpg";
-import Foto8 from "/public/gallery-8.jpg";
-import Foto9 from "/public/gallery-9.jpg";
-import Foto10 from "/public/gallery-10.jpg";
-import Foto11 from "/public/gallery-11.jpg";
-import Foto12 from "/public/gallery-12.jpg";
+import Foto3 from "/public/love-3.jpg";
+import Foto4 from "/public/love-4.jpg";
+import Foto5 from "/public/love-5.jpg";
+import Foto6 from "/public/love-6.jpg";
+import Foto7 from "/public/love-7.jpg";
+import Foto8 from "/public/love-8.jpg";
+import Foto9 from "/public/love-9.jpg";
+import Foto10 from "/public/love-10.jpg";
 
 // Arrow component
 function Arrow(props: {
@@ -149,20 +147,6 @@ export default function GalleryOur() {
             <Image
               src={Foto10}
               alt="gallery-10"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="keen-slider__slide h-[200px] sm:h-[150px]">
-            <Image
-              src={Foto11}
-              alt="gallery-11"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="keen-slider__slide h-[200px] sm:h-[150px]">
-            <Image
-              src={Foto12}
-              alt="gallery-12"
               className="w-full h-full object-cover"
             />
           </div>
