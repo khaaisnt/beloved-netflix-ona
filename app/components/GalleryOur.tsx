@@ -15,6 +15,8 @@ import Foto7 from "/public/love-7.jpg";
 import Foto8 from "/public/love-8.jpg";
 import Foto9 from "/public/love-9.jpg";
 import Foto10 from "/public/love-10.jpg";
+import Foto11 from "/public/love-11.png";
+import Foto12 from "/public/love-12.png";
 
 // Arrow component
 function Arrow(props: {
@@ -147,6 +149,20 @@ export default function GalleryOur() {
             <Image
               src={Foto10}
               alt="gallery-10"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
+            />
+          </div>
+          <div className="keen-slider__slide h-[200px] sm:h-[150px]">
+            <Image
+              src={Foto11}
+              alt="gallery-11"
+              className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
+            />
+          </div>
+          <div className="keen-slider__slide h-[200px] sm:h-[150px]">
+            <Image
+              src={Foto12}
+              alt="gallery-12"
               className="w-full h-full object-cover hover:scale-110 duration-[400ms]"
             />
           </div>
